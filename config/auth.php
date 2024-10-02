@@ -41,7 +41,7 @@ return [
             'provider' => 'users',
         ],
 
-        'guard' => [
+        'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
