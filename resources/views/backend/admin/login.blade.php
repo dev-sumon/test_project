@@ -79,7 +79,7 @@
     </div>
 @endsection --}}
 
-@extends('layouts.app')
+@extends('backend.layouts.master')
 
 
 @section('content')

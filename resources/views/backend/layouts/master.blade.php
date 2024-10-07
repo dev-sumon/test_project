@@ -31,20 +31,37 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+
+
     <div class="wrapper">
 
+
+
+        @auth('admin')
         <!-- Main Sidebar Container -->
         @include('backend.includes.top_nav')
         @include('backend.includes.side_nav')
 
-        <!-- Content Wrapper. Contains page content -->
+
         <div class="content-wrapper">
+        @endauth
+
+        <!-- Content Wrapper. Contains page content -->
+
             <!-- Content Header (Page header) -->
             @yield('content')
+
+
+        @auth('admin')
         </div>
+
         <!-- /.content-wrapper -->
         @include('backend.includes.footer')
+
+        @endauth
+
     </div>
+
     <!-- ./wrapper -->
 
     <!-- jQuery -->
